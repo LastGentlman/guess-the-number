@@ -1,0 +1,38 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+.box {
+  border: 1px blue solid;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+h1 {
+margin: 1px;
+}
+
+p {
+margin: 2px;
+padding: 1px;
+}
+
+footer {
+background: skyblue;
+color: wheat;
+display: flex;
+justify-content: center;
+}
