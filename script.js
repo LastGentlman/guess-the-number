@@ -15,7 +15,7 @@ let guessCount = 1
 // Our final two variables store a guess count of 1, and a reference to a reset button
 
 function guessCheck() {
-    let userGuess = Number(guessField.value);
+    let userGuess = +guessField.value; //longer variant 'Number(guessField.value)'
 // Checking if imput its a number
     
     if (guessCount === 1) {
