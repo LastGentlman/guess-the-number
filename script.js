@@ -52,7 +52,8 @@ function guessCheck() {
 // get us ready for the next guess to be submitted. We add 1 to the guessCount variable so the player uses up their turn, and empty the value out of the form text field and focus it again, ready for the next guess to be entered.
 }
 
-// guessSubmit.addEventListener('click', guessCheck);
+guessSubmit.addEventListener('click', guessCheck);
+guessSubmit.addEventListener('keypress', (e) => if (e.key === 'Enter') guessCheck);
 
 function setGameOver() {
     guessField.disabled = true;
