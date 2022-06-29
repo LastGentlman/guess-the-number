@@ -54,9 +54,10 @@ function guessCheck() {
 
 guessSubmit.addEventListener('click', guessCheck);
 
-guessField.addEventListener('keyup',(e) => {
+guessField.addEventListener('keyup',(e) => { //FIXME
     if (e.keyCode === 13) {
     console.log('enter key pressed')
+    return guessCheck
   }
 })
 
