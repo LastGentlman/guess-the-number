@@ -24,8 +24,6 @@ body {
 
 new-game-btn {
   display: flex;
-  align-self: center;
-  justify-self: center;
 }
 
 h1 {
