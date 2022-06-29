@@ -58,7 +58,7 @@ gessField.addEventListener('keyup',(e) => {
     if (e.keyCode === 13) {
     gessCheck
   }
-)
+})
 
 function setGameOver() {
     guessField.disabled = true;
