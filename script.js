@@ -53,7 +53,7 @@ function guessCheck() {
 }
 
 guessSubmit.addEventListener('click', guessCheck);
-gessField.addEventListener('keypress', (e) => if (e.key === 'Enter') guessCheck);
+// gessField.addEventListener('keypress', (e) => if (e.key === 'Enter') guessCheck);
 
 function setGameOver() {
     guessField.disabled = true;
