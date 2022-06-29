@@ -54,7 +54,7 @@ function guessCheck() {
 
 guessSubmit.addEventListener('click', guessCheck);
 
-gessField.addEventListener('keyup',(e) => {
+gessSubmit.addEventListener('keyup',(e) => {
     if (e.keyCode === 13) {
     gessCheck
   }
@@ -64,6 +64,7 @@ function setGameOver() {
     guessSubmit.disabled = true;
 // disable the form text input and button by setting their disabled properties to true
     resetButton = document.createElement('button');
+    resetButton.classList.add('new-game-btn')
     resetButton.textContent = 'Start a New Game';
     document.body.appendChild(resetButton);
 // generate a new <button> element, and add it to the bottom
