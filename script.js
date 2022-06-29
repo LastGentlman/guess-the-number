@@ -56,7 +56,7 @@ guessSubmit.addEventListener('click', guessCheck);
 
 guessField.addEventListener('keyup',(e) => {
     if (e.keyCode === 13) {
-    guessCheck
+    console.log('enter key pressed')
   }
 })
 
@@ -67,7 +67,7 @@ function setGameOver() {
     resetButton = document.createElement('button');
     resetButton.classList.add('new-game-btn')
     resetButton.textContent = 'Start a New Game';
-    document.body.appendChild(resetButton);
+    document.querySelector('.box').appendChild(resetButton);
 // generate a new <button> element, and add it to the bottom
     resetButton.addEventListener('click', resetGame);
 }
