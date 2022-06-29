@@ -16,10 +16,10 @@
         <p class="p1">I'm thinking on a number in the range of 1 to 100</p>
         <p class="p2">Can you gess it in 10 attempts or less?</p>
 
-        <div class="form">
-           <input type="text" id="guessField" class="guessField" placeholder="Imput your guess">
-            <input type="submit" value="Submit guess" class="guessSubmit" > 
-        </div>
+      <form class="form" onsubmit="guessCheck()">
+        <input type="text" id="guessField" class="guessField" placeholder="Input your guess" >
+        <input type="submit" value="Submit guess" class="guessSubmit" >
+      </form>
         
         <div class="resultDisplay">
             <p class="guesses"></p>
