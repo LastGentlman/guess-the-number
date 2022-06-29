@@ -53,7 +53,11 @@ function guessCheck() {
 }
 
 guessSubmit.addEventListener('click', guessCheck);
-// gessField.addEventListener('keypress', (e) => if (e.key === 'Enter') guessCheck);
+
+gessField.addEventListener('keyup',(e) => {
+    if (e.keyCode === 13) {
+    gessCheck
+  }
 
 function setGameOver() {
     guessField.disabled = true;
