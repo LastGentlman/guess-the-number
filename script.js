@@ -66,7 +66,8 @@ function setGameOver() {
     resetButton.addEventListener('click', resetGame);
 }
 
-function resetGame() {
+function resetGame() { // completely resets everything to how it was at the start of the game, so the player can have another go.
+
     guessCount = 1;
     
     const resetDisplay = document.querySelectorAll('.resultDisplay p');
@@ -85,4 +86,3 @@ function resetGame() {
     
     numberRandom = Math.floor(Math.random() * 100) + 1;
 }
-// completely resets everything to how it was at the start of the game, so the player can have another go.
