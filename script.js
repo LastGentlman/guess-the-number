@@ -54,7 +54,7 @@ function guessCheck() {
 
 guessSubmit.addEventListener('click', guessCheck);
 
-gessField.addEventListener('keyup',(e) => {
+guessField.addEventListener('keyup',(e) => {
     if (e.keyCode === 13) {
     gessCheck
   }
